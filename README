@@ -1,0 +1,19 @@
+
+[+ Alunos ]
+	- Bruno Pessanha de Carvalho - 08/25727
+	- Marcelo Valença de Almeida - 08/35919
+
+[+ Instrucoes ]
+	- Para compilar:
+		./compila.sh
+	- Para rodar(O Memory manager é responsável por criar o Replacement Daemon): 
+		./mm OCUPACAO_OK MAX_OCUPACAO POLITICA MAX_FRAMES & 
+			Onde POLITICA pode ser:
+				0 - para Random;
+				1 - para FIFO (First in, first out);
+				2 - para LRU (Least Recently Used).
+		./client paginas_processo_n &
+
+[+ Observação ]
+	- O número máximo de processos testados foi 32.
+
